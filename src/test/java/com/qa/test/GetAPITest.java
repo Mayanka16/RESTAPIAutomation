@@ -106,9 +106,9 @@ public class GetAPITest extends TestBase {
 	@Test(priority=2)
 	public void getAPITestWithHeaders() throws ParseException, IOException {
 		HashMap<String, String> headerMap = new HashMap<String, String>();
-		headerMap.put("User-Agent", "PostmanRuntime/7.36.1");
+		//headerMap.put("User-Agent", "PostmanRuntime/7.36.1");
 		headerMap.put("Content-Type", "application/json");
-		headerMap.put("Host", "<calculated when request is sent>");
+		//headerMap.put("Host", "<calculated when request is sent>");
 		
 		restClient = new RestClient(); // calling get method
 		closeableHttpresponse = restClient.get(url, headerMap);
